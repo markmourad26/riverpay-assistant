@@ -174,5 +174,5 @@ data/pack/  knowledge pack, verbatim export        data/questions.json   the 16 
 eval/       dev_set.json (tuning), expectations.json (held-out key), score.py
 output/     eval_results.json, eval_scorecard.md, eval_baseline_results.json, dev_*.json/md, handoffs.jsonl
 tests/      offline tests        cli.py  streamlit_app.py  run_eval.py  check_citations.py  Dockerfile
-deck/       RiverPay_Assistant_Debrief.pptx (6 slides, speaker notes) + build_deck.py that generates it
+deck/       RiverPay_Assistant_Debrief.pptx (6 slides, speaker notes)
 ```

@@ -13,15 +13,15 @@
       "clean_answer": 1.0
     },
     "stable_items": 1.0,
-    "latency_ms_p50": 1941.3700103759766,
-    "latency_ms_p95": 2865.9167289733887,
-    "llm_calls_per_q": 2.625,
-    "json_mode_fallbacks": 2,
+    "latency_ms_p50": 1913.9598608016968,
+    "latency_ms_p95": 3073.2226371765137,
+    "llm_calls_per_q": 2.5833333333333335,
+    "json_mode_fallbacks": 1,
     "tokens_per_q": {
-      "prompt": 3160,
-      "completion": 272
+      "prompt": 3123,
+      "completion": 264
     },
-    "cost_usd_per_q": 0.0020795274999999996,
+    "cost_usd_per_q": 0.0020505304166666665,
     "per_item": [
       {
         "id": "Q01",
@@ -258,7 +258,7 @@
         ],
         "handoff": [
           false,
-          false,
+          true,
           false
         ],
         "failed_checks": []
@@ -285,25 +285,25 @@
     "label": "mega-prompt baseline",
     "runs": 3,
     "items": 16,
-    "pass_rate": 0.8125,
+    "pass_rate": 0.7916666666666666,
     "check_rates": {
       "behaviour": 0.875,
       "cited_expected": 1.0,
       "citations_real": 0.9375,
       "archive_paired": 1.0,
-      "facts": 1.0,
+      "facts": 0.9791666666666666,
       "clean_answer": 1.0
     },
-    "stable_items": 1.0,
-    "latency_ms_p50": 778.8954973220825,
-    "latency_ms_p95": 974.1795063018799,
+    "stable_items": 0.9375,
+    "latency_ms_p50": 802.416205406189,
+    "latency_ms_p95": 1156.163215637207,
     "llm_calls_per_q": 1.0,
     "json_mode_fallbacks": 0,
     "tokens_per_q": {
       "prompt": 2723,
-      "completion": 110
+      "completion": 114
     },
-    "cost_usd_per_q": 0.0016939420833333334,
+    "cost_usd_per_q": 0.001697085625,
     "per_item": [
       {
         "id": "Q01",
@@ -408,7 +408,7 @@
       {
         "id": "Q07",
         "question": "My USSD session dropped while sending money. What should I do?",
-        "passes": 3,
+        "passes": 2,
         "refusal": [
           false,
           false,
@@ -419,7 +419,9 @@
           false,
           false
         ],
-        "failed_checks": []
+        "failed_checks": [
+          "facts"
+        ]
       },
       {
         "id": "Q08",
@@ -543,7 +545,7 @@
           true
         ],
         "handoff": [
-          true,
+          false,
           false,
           false
         ],

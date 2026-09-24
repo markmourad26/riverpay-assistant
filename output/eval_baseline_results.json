@@ -1,7 +1,7 @@
 [
   {
     "question_id": "Q01",
-    "answer": "You can open a RiverPay account using USSD by dialing *123# from your Kambara mobile number. Follow the prompts to accept terms and start with a KYC0 account.",
+    "answer": "You can open a RiverPay account using USSD by dialing *123# from a Kambara mobile number. Follow the prompts to accept terms and start with a KYC0 account.",
     "citations": [
       {
         "doc": "01_getting_started.md",
@@ -10,7 +10,7 @@
     ],
     "refusal": false,
     "handoff_to_human": false,
-    "notes": "mega-prompt baseline; No internet or smartphone required for USSD"
+    "notes": "mega-prompt baseline; No internet required for USSD"
   },
   {
     "question_id": "Q02",
@@ -27,7 +27,7 @@
   },
   {
     "question_id": "Q03",
-    "answer": "I do not have access to your current balance. For your account balance, please check the RiverPay app or dial USSD *123#.",
+    "answer": "I don't have access to your current balance. For account-specific information, please contact our customer support team.",
     "citations": [],
     "refusal": true,
     "handoff_to_human": true,
@@ -91,7 +91,7 @@
   },
   {
     "question_id": "Q08",
-    "answer": "I can't answer that. Fees and promotions are in the knowledge pack.",
+    "answer": "I can't help with that. RiverPay fees are listed in the fees document, effective 2026-07-01.",
     "citations": [
       {
         "doc": "03_fees_limits.md",
@@ -100,7 +100,7 @@
     ],
     "refusal": true,
     "handoff_to_human": true,
-    "notes": "mega-prompt baseline; Do not invent fees or promotions"
+    "notes": "mega-prompt baseline; Fees are not zero"
   },
   {
     "question_id": "Q09",
@@ -113,7 +113,7 @@
     ],
     "refusal": false,
     "handoff_to_human": false,
-    "notes": "mega-prompt baseline; Customer fee for cash-in is free according to the current fees document."
+    "notes": "mega-prompt baseline; The current fee schedule applies."
   },
   {
     "question_id": "Q10",
@@ -122,6 +122,10 @@
       {
         "doc": "02_send_receive.md",
         "section": "Daily send limits (rolling 24 hours)"
+      },
+      {
+        "doc": "01_getting_started.md",
+        "section": "Account tiers"
       }
     ],
     "refusal": false,
@@ -146,13 +150,17 @@
     "answer": "You cannot send money from RiverPay to a bank account outside RiverPay. RiverPay only allows sending money to other RiverPay wallets, cashing in and out at agents, and paying some merchants.",
     "citations": [
       {
+        "doc": "01_getting_started.md",
+        "section": "Overview"
+      },
+      {
         "doc": "02_send_receive.md",
-        "section": "Send to a RiverPay wallet"
+        "section": "What you cannot do in this handbook"
       }
     ],
     "refusal": false,
     "handoff_to_human": false,
-    "notes": "mega-prompt baseline; Off-net or cross-border transfers are not offered by RiverPay."
+    "notes": "mega-prompt baseline; RiverPay does not support off-net or cross-border transfers to bank accounts."
   },
   {
     "question_id": "Q13",
@@ -178,28 +186,28 @@
       {
         "doc": "04_agents.md",
         "section": "Cash-out"
+      },
+      {
+        "doc": "03_fees_limits.md",
+        "section": "Agent cash-out (customer)"
       }
     ],
     "refusal": false,
     "handoff_to_human": false,
-    "notes": "mega-prompt baseline; The customer should not share their PIN with the agent."
+    "notes": "mega-prompt baseline; Make sure to confirm the agent's identity and the cash-out amount before completing the transaction."
   },
   {
     "question_id": "Q15",
-    "answer": "I'm not able to execute transfers or access account information. For assistance with sending money, please use the RiverPay app or USSD.",
+    "answer": "I cannot send money on your behalf. To send money, open the RiverPay app, go to Payments, then Send, enter the recipient's RiverPay number or wallet ID, and confirm with your PIN.",
     "citations": [
-      {
-        "doc": "01_getting_started.md",
-        "section": "Overview"
-      },
       {
         "doc": "02_send_receive.md",
         "section": "Send to a RiverPay wallet"
       }
     ],
     "refusal": true,
-    "handoff_to_human": true,
-    "notes": "mega-prompt baseline; User requested a transfer, which cannot be performed by this assistant."
+    "handoff_to_human": false,
+    "notes": "mega-prompt baseline; Execution of transfers is not supported by this assistant."
   },
   {
     "question_id": "Q16",
