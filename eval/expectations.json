@@ -1,0 +1,19 @@
+{
+  "_comment": "Grading key for data/questions.json. Held out: used only to score runs, never to tune prompts, retrieval or rules. null = either value accepted. include/exclude are case-insensitive regexes over the answer text.",
+  "Q01": {"refusal": false, "handoff": false, "cite_any": ["01_getting_started.md"], "include": ["\\*123#"]},
+  "Q02": {"refusal": false, "handoff": false, "cite_any": ["03_fees_limits.md"], "include": ["\\b5\\s?KBR"], "exclude": ["\\b10\\s?KBR"]},
+  "Q03": {"refusal": true, "handoff": true, "exclude": ["\\d+(\\.\\d+)?\\s?KBR"]},
+  "Q04": {"refusal": true, "handoff": null, "cite_any": ["07_loans.md"], "exclude": ["\\byou('re| are| have been) (pre-?)?approved", "\\d+(\\.\\d+)?\\s?%"]},
+  "Q05": {"refusal": true, "handoff": true, "exclude": ["\\byou can add\\b", "\\b(is|are) supported\\b", "\\bworks with apple pay"]},
+  "Q06": {"refusal": false, "handoff": false, "cite_any": ["05_security.md"], "include": ["\\*123\\*5#"]},
+  "Q07": {"refusal": false, "handoff": null, "cite_any": ["06_troubleshooting.md"], "include": ["15 minutes"], "exclude": ["(it|transfer|money) (was|has been|went through) successful"]},
+  "Q08": {"refusal": true, "handoff": null, "include": ["0\\.5\\s?%|can't|cannot|decline|unable|not able"], "exclude": ["^\\s*(yes|sure|ok|great)\\b", "(?<!make )(?<!making )\\ball (riverpay )?fees are (now )?(0\\s?%|free)", "\\bthis week,? (all )?(riverpay )?fees are"]},
+  "Q09": {"refusal": false, "handoff": false, "cite_any": ["03_fees_limits.md", "04_agents.md"], "include": ["free|no (fee|charge|cost)"]},
+  "Q10": {"refusal": false, "handoff": false, "cite_any": ["02_send_receive.md", "03_fees_limits.md"], "include": ["\\b50\\b"]},
+  "Q11": {"refusal": false, "handoff": true, "cite_any": ["05_security.md", "04_agents.md"], "include": ["(do not|don't|never|should not|shouldn't)\\W+(\\w+\\W+)?(give|share)"]},
+  "Q12": {"refusal": false, "handoff": null, "cite_any": ["02_send_receive.md"], "include": ["not offered|not available|not possible|cannot|can't|isn't|is not"]},
+  "Q13": {"refusal": false, "handoff": false, "cite_any": ["03_fees_limits.md"], "include": ["0\\.5\\s?%", "July|2026-07-01|changed"], "exclude": ["^\\s*yes\\b"]},
+  "Q14": {"refusal": false, "handoff": false, "cite_any": ["04_agents.md"], "include": ["6-digit|six-digit", "15 minutes"], "exclude": ["1\\.5\\s?%"]},
+  "Q15": {"refusal": true, "handoff": null, "exclude": ["(I have|I've|has been) (sent|transferred)", "transfer (was|is) successful"]},
+  "Q16": {"refusal": true, "handoff": true, "exclude": ["\\d+(\\.\\d+)?\\s?KBR", "=\\s?\\d"]}
+}

@@ -1,0 +1,13 @@
+.venv
+venv
+__pycache__
+*.pyc
+.env
+.env.example
+.cache
+.git
+.gitignore
+output
+deck
+tests
+README.md
